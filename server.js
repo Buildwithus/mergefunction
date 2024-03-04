@@ -4,12 +4,12 @@ const exec = util.promisify(require('child_process').exec);
 const express = require('express')
 const app = express();
 app.use(express.json())
-const pushToGitHub = async () => {
+const pushToGitHub = async (branchname) => {
   await exec('git add .');
   console.log("added successfully");
   await exec('git commit -m "done"');
   console.log("commited successfully ")
-  await exec('git push origin master');
+  await exec(`git push origin ${branchname}`);
   console.log('git push successfully')
 }
 const pullingfromgithub=async()=>{
@@ -20,8 +20,9 @@ const pullingfromgithub=async()=>{
 }
 
 app.get("/merge", async (req, res) => {
-  await pullingfromgithub();
-  await pushToGitHub()
+  const branchname='master'
+  // await pullingfromgithub();
+  await pushToGitHub(branchname)
   console.log("successfully changed")
   res.send("done ")
 })
