@@ -4,3 +4,4 @@ manual changes in newbranch
 This is a third line form newbranch
 this is a 4th line form newbranch
 this is a 5th line form newbranch
+this is a 6th line form newbranch
