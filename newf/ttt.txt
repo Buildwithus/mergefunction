@@ -32,5 +32,10 @@ this is a 20th line form
 =======
 this is a 21th line from
 this is a 22th line form newbranch
+<<<<<<< HEAD
 >>>>>>> 03af9221b67f787b1eb437fd5ba6387886411355
 this is a 23th line form newbranch
+=======
+this is a 24th 
+this is s 23th line
+>>>>>>> 36ad13476ff1fb13a6f2156f668c2dfe80c82c28
