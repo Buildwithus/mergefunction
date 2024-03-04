@@ -5,12 +5,14 @@ const express = require('express')
 const app = express();
 app.use(express.json())
 const pushToGitHub = async () => {
-  // await exec('git pull origin newbranch');
-  // console.log("pulling successfuylly");
+  await exec('git pull origin newbranch');
+  console.log("pulling successfuylly");
   await exec('git add .');
   console.log("added successfully");
   await exec('git commit -m "done"');
+  console.log("commited successfully ")
   await exec('git push origin master');
+  console.log('git push successfully')
 }
 
 app.get("/merge", async (req, res) => {
