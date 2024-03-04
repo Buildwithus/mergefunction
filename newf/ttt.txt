@@ -15,4 +15,8 @@ this is a 13th line from newbranch
 this is a 14th line from newbranch
 this is a 16th line from newbranch
 this is a 17th line form newbranchc
+<<<<<<< HEAD
 yj
+=======
+this is a 18th line from newbranch
+>>>>>>> 92a9ca7f2dd09a4453d4d9edd7e33bbd69f963a5
