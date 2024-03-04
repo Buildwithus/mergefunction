@@ -64,4 +64,8 @@ asdfasf fafsd
 >>>>>>> 7f8b0776ffe69ce351bb154d52a611bee6caaeda
 =======
 this is a 1-00th line code 
+<<<<<<< HEAD
 >>>>>>> 3bc7f443d2b2ad3ea12994227c0b29ad49df7a43
+=======
+this is a new text from newbranch
+>>>>>>> 09183944d0d852150fde2cd41eb3af11cd05319e
