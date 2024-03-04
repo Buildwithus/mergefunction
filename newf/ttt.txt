@@ -19,4 +19,8 @@ this is a 17th line form newbranchc
 yj
 =======
 this is a 18th line from newbranch
+<<<<<<< HEAD
 >>>>>>> 92a9ca7f2dd09a4453d4d9edd7e33bbd69f963a5
+=======
+this is a 19th line from newbranch
+>>>>>>> 62d3ac38ce06592f1e9d97c6f062260bdeaf471c
