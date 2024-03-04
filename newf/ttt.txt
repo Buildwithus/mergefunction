@@ -14,3 +14,4 @@ this is a 12th line from newbranch
 this is a 13th line from newbranch
 this is a 14th line from newbranch
 this is a 16th line from newbranch
+this is a 17th line form newbranchc
