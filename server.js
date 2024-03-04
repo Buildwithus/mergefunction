@@ -32,7 +32,10 @@ const checkbranch=async(newbranch)=>{
 }
 
 const mergingbranch=(branchname,commitMessage)=>{
-  exec(` git pull origin ${branchname} && git add . && git commit -m ${commitMessage} && git push origin ${branchname} && git merge ${branchname}`);
+  const newDirectory = 'D:/node scheduler/newf';
+  process.chdir(newDirectory);
+  console.log(process.cwd())
+  exec(`git pull origin ${branchname} && git add . && git commit -m "${commitMessage}" && git push origin branch`);
 }
 
 app.get("/merge",async(req,res)=>{
