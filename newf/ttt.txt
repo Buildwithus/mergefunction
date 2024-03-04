@@ -72,4 +72,8 @@ this is a new text from newbranch
 >>>>>>> 09183944d0d852150fde2cd41eb3af11cd05319e
 =======
 other file 
+<<<<<<< HEAD
 >>>>>>> f00d48765a2bb090ddde27053ef8186a648ed07a
+=======
+second file
+>>>>>>> c06b0e718eb9f5473a8abfb284b5600c1d9fbd7c

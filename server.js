@@ -13,6 +13,7 @@ const pushToGitHub = async () => {
   console.log('git push successfully')
 }
 const pullingfromgithub=async()=>{
+  // await exec('git fetch origin newbranch')
   await exec('git fetch origin newbranch')
   await exec('git merge newbranch')
   console.log("pulling done")
