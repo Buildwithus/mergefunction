@@ -31,8 +31,16 @@ const checkbranch=async(newbranch)=>{
   })
 }
 
+const mergingbranch=(branchname)=>{
+  exec(`git checkout master && git pull origin ${branchname} && git merge ${branchname}`);
+}
 
-
+app.get("/merge",async(req,res)=>{
+  const branchname='newbranch'
+  await mergingbranch(branchname)
+  console.log("merges succesfully")
+  res.send("merging done!")
+})
 app.get("/push", (req, res) => {
   const commitMessage = "Committing changes";
   pushToGitHub(commitMessage);
