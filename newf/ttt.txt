@@ -27,4 +27,9 @@ this is a 19th line from newbranch
 >>>>>>> 62d3ac38ce06592f1e9d97c6f062260bdeaf471c
 =======
 this is a 20th line form
+<<<<<<< HEAD
 >>>>>>> 64bf3c0c88855b1a9c415c0d6f997dcf8e66c80b
+=======
+this is a 21th line from
+this is a 22th line form newbranch
+>>>>>>> 03af9221b67f787b1eb437fd5ba6387886411355
