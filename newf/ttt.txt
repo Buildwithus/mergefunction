@@ -68,4 +68,8 @@ this is a 1-00th line code
 >>>>>>> 3bc7f443d2b2ad3ea12994227c0b29ad49df7a43
 =======
 this is a new text from newbranch
+<<<<<<< HEAD
 >>>>>>> 09183944d0d852150fde2cd41eb3af11cd05319e
+=======
+other file 
+>>>>>>> f00d48765a2bb090ddde27053ef8186a648ed07a
