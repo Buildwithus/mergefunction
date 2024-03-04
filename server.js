@@ -20,7 +20,7 @@ const pullingfromgithub=async()=>{
 }
 
 app.get("/merge", async (req, res) => {
-  // await pullingfromgithub();
+  await pullingfromgithub();
   await pushToGitHub()
   console.log("successfully changed")
   res.send("done ")
