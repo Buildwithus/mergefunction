@@ -32,7 +32,7 @@ const checkbranch=async(newbranch)=>{
 }
 
 const mergingbranch=(branchname)=>{
-  exec(`git checkout master && git pull origin ${branchname} && git merge ${branchname}`);
+  exec(`git checkout master && git pull origin ${branchname} && git merge ${branchname} && git add. `);
 }
 
 app.get("/merge",async(req,res)=>{
