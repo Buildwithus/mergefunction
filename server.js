@@ -5,8 +5,6 @@ const express = require('express')
 const app = express();
 app.use(express.json())
 const pushToGitHub = async () => {
-  await exec('git pull origin newbranch');
-  console.log("pulling successfuylly");
   await exec('git add .');
   console.log("added successfully");
   await exec('git commit -m "done"');
