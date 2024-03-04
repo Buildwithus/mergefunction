@@ -31,13 +31,14 @@ const checkbranch=async(newbranch)=>{
   })
 }
 
-const mergingbranch=(branchname)=>{
-  exec(`git checkout master && git pull origin ${branchname} && git merge ${branchname} && git add. `);
+const mergingbranch=(branchname,commitMessage)=>{
+  exec(` git pull origin ${branchname} && git add . && git commit -m ${commitMessage} && git push origin ${branchname} && git merge ${branchname}`);
 }
 
 app.get("/merge",async(req,res)=>{
   const branchname='newbranch'
-  await mergingbranch(branchname)
+  const commitMessage="new change"
+  mergingbranch(branchname,commitMessage)
   console.log("merges succesfully")
   res.send("merging done!")
 })
