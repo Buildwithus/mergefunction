@@ -12,8 +12,13 @@ const pushToGitHub = async () => {
   await exec('git push origin master');
   console.log('git push successfully')
 }
+const pullingfromgithub=async()=>{
+  await exec('git pull origin newbranch')
+  console.log("pulling done")
+}
 
 app.get("/merge", async (req, res) => {
+  // await pullingfromgithub();
   await pushToGitHub()
   console.log("successfully changed")
   res.send("done ")
